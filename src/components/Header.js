@@ -4,7 +4,10 @@ import ReactCountryFlag from "react-country-flag";
 const Header = (props) => {
   return (
     <header className="app-header">
-      <section className="app-header-filter"></section>
+      <section className="app-header-filter">
+        <input type={"search"} placeholder="Search"/>
+        <span class="material-symbols-rounded">search</span>
+      </section>
       <section className="app-header-profile">
         <ReactCountryFlag
           style={{
