@@ -8,12 +8,12 @@ const Navigation = (prpos) => {
       <div className="navigation-wrapper">
         <div>
           <header>
-            <span class="material-symbols-rounded">flight_takeoff</span>
+            <span className="material-symbols-rounded">flight_takeoff</span>
             <h1>Ntour</h1>
           </header>
           <button className="navigation-new-trip-btn">
             <h2>New Trip</h2>
-            <span class="material-symbols-rounded">add</span>
+            <span className="material-symbols-rounded">add</span>
           </button>
         </div>
 
@@ -43,11 +43,11 @@ const Navigation = (prpos) => {
         {/* forecast */}
         <article>
           <div className="navigation-forecast-header">
-            <span class="material-symbols-rounded" id="navigation-forecast-icon">sunny</span>
+            <span className="material-symbols-rounded" id="navigation-forecast-icon">sunny</span>
             <div className="navigation-forecast-location">
               <h1>30°</h1>
               <div className="navigation-forecast-location-wrapper">
-                <span class="material-symbols-rounded">near_me</span>
+                <span className="material-symbols-rounded">near_me</span>
                 <h3>Rome</h3>
               </div>
             </div>
@@ -65,7 +65,7 @@ const Navigation = (prpos) => {
 
         {/* support */}
         <footer className="navigation-footer">
-          <span class="material-symbols-rounded">contact_support</span>
+          <span className="material-symbols-rounded">contact_support</span>
           <h2>Support</h2>
         </footer>
       </div>

@@ -6,7 +6,7 @@ const Header = (props) => {
     <header className="app-header">
       <section className="app-header-filter">
         <input type={"search"} placeholder="Search"/>
-        <span class="material-symbols-rounded">search</span>
+        <span className="material-symbols-rounded">search</span>
       </section>
       <section className="app-header-profile">
         <ReactCountryFlag
@@ -23,7 +23,7 @@ const Header = (props) => {
         />
 
         <div className="profile-notifications-wrapper">
-          <span class="material-symbols-rounded">notifications</span>
+          <span className="material-symbols-rounded">notifications</span>
           <div className="profile-notifications-dot" />
         </div>
 
