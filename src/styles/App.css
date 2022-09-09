@@ -400,6 +400,7 @@ h2 {
   margin-bottom: .8rem;
   background-color: transparent;
   border-radius: 16px;
+  padding-right: 2rem;
 }
 
 .todo-list-item-avatar {
