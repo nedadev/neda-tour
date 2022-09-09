@@ -1,6 +1,4 @@
-
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
-const DestinationMap = (props) => {
+  const DestinationMap = (props) => {
   return (
     <article className="destinations-map">
       <div style={{ height: "100vh", width: "100%" }}>
