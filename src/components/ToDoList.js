@@ -46,7 +46,7 @@ const fakeData = [
 
 const ToDoList = (props) => {
   return (
-    <div className="todo-list-item-wrapper">
+    <section className="todo-list-item-wrapper">
       <h1>Top attractions</h1>
       {fakeData.map((data, index) => {
         return (
@@ -69,12 +69,12 @@ const ToDoList = (props) => {
               classNames="todo-list-item-rating"
             />
             <button className="todo-list-item-btn">
-              <span class="material-symbols-rounded">near_me</span>
+              <span className="material-symbols-rounded">near_me</span>
             </button>
           </div>
         );
       })}
-    </div>
+    </section>
   );
 };
 
