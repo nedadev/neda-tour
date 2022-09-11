@@ -2,7 +2,7 @@
 
 :root {
   --navigation-w: 40rem;
-  --header-profile-w: 4rem;
+  --header-profile-w: 40rem;
   --app-body-spacing: 4.7rem;
 }
 
@@ -436,9 +436,55 @@ h2 {
 }
 
 .carousel-statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: .25;
   height: 30.2rem;
 }
+
+.carousel-statistics h2 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #9AA2AC;
+}
+
+.carousel-facilities{
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.trip-statistics{
+  position: relative;
+  flex: 1;
+}
+
+.trip-statistics-div{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #FFF;
+  position: absolute;
+  top: 0%;
+  left: 40%;
+}
+
+.trip-statistics-div-1{
+  transform: translate(-80%, 30%);
+
+}
+
+.trip-statistics-div-2{
+  transform: translate(-140%, 110%);
+}
+
+.trip-statistics-div-3{
+  transform: translate(-20%, 180%);
+}
+
 
 
 .destinations {

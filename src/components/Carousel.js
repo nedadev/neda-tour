@@ -1,3 +1,21 @@
+import TripStatistics from "./TripStatistics";
+
+const Facilities = (props) => {
+  const { circleColor, name } = props;
+  return (
+    <div style={{ display: "flex", alignItems:"center", gap:".8rem" }}>
+      <span
+        className="material-symbols-rounded"
+        style={{ color: circleColor, fontSize: "1.7rem" }}
+      >
+        trip_origin
+      </span>
+      <h3 style={{ fontWeight: "600", fontSize: "1.4rem", color: "#27292C" }}>
+        {name}
+      </h3>
+    </div>
+  );
+};
 // const fakeData = [
 //   {
 //     city: "Rome",
@@ -40,7 +58,15 @@ const Carousel = (props) => {
       </div>
 
       {/* statistics */}
-      <div className="carousel-statistics"></div>
+      <div className="carousel-statistics">
+        <h2>Expenses</h2>
+        <TripStatistics num1={60} num2={30} num3={10}/>
+        <div className="carousel-facilities">
+          <Facilities circleColor={"#02AF72"} name={"Transport"} />
+          <Facilities circleColor={"#6C50FC"} name={"Hotel"} />
+          <Facilities circleColor={"#FF742C"} name={"Other"} />
+        </div>
+      </div>
     </section>
   );
 };
