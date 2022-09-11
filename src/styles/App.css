@@ -715,11 +715,88 @@ h2 {
 }
 
 .timeline {
-  background-color: tomato;
   width: var(--header-profile-w);
   margin-left: var(--app-body-spacing);
 }
 
+.timeline-heading-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.timeline-heading-wrapper h1{
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #27292C;
+}
+
+.timeline-heading-wrapper button{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 1rem;
+  padding: 1.2rem 3.2rem;
+  background: #27292C;
+  border-radius: 1.6rem;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: none;
+}
+
+.timeline-heading-wrapper button span{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+
+
+.react-calendar{
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-family: 'Sora', sans-serif;
+}
+.react-calendar__navigation{
+  background-color: transparent;
+  margin-bottom: 3.2rem;
+}
+.react-calendar__navigation__arrow{
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #27292C;
+}
+.react-calendar__navigation__label{
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #27292C;
+}
+.react-calendar__month-view{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #27292C;
+}
+.react-calendar__month-view__weekdays{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #9AA2AC;
+  margin-bottom: 3.2rem;
+}
+.react-calendar__tile{
+  margin-bottom: 3.2rem;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.react-calendar__tile:hover{
+  background-color: #FFF;
+}
 /* end of app-main */
 
 /* end of footer */
