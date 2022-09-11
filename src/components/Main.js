@@ -1,6 +1,7 @@
 import Carousel from "./Carousel";
 import DestinationInfo from "./DestinationInfo";
 import ToDoList from "./ToDoList";
+import TimeLine from "./TimeLine";
 
 const Main = (props) => {
   return (
@@ -13,7 +14,7 @@ const Main = (props) => {
         {/* TODOs */}
         <ToDoList />
       </section>
-      <aside className="timeline">hello word</aside>
+      <TimeLine />
     </main>
   );
 };

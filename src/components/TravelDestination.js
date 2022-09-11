@@ -37,7 +37,7 @@ const TravelDestination = (props) => {
         </div>
         <div>
           <span
-            class="material-symbols-rounded"
+            className="material-symbols-rounded"
             style={{ marginRight: "1rem" }}
           >
             flight
