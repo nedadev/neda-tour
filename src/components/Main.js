@@ -14,7 +14,7 @@ const Main = (props) => {
         {/* TODOs */}
         <ToDoList />
       </section>
-      <TimeLine/>
+      <TimeLine />
     </main>
   );
 };
