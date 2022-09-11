@@ -2,11 +2,14 @@
 
 :root {
   --navigation-w: 40rem;
-  --header-profile-w: 40rem;
+  --header-profile-w: 4rem;
   --app-body-spacing: 4.7rem;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -373,18 +376,82 @@ h2 {
   justify-content: space-between;
 }
 
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+
+
+.carousel-image-slide {
+  flex: .72;
+  height: 30.2rem;
+  box-shadow: 0px 10px 35px rgba(9, 16, 44, 0.07);
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 4rem 0 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel-image-slide h2 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.carousel-image-slide h1 {
+  font-weight: 700;
+  font-size: 7.2rem;
+  letter-spacing: .4rem;
+}
+
+.carousel-btn-wrapper {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.carousel-btn{
+  background-color: transparent;
+  border-radius: 50%;
+  width: 5.6rem;
+  height: 5.6rem;
+  border: none;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.carousel-btn span{
+  color: #27292C;
+  font-size: 2.8rem;
+}
+
+.carousel-btn:hover{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 5.6rem;
+  height: 5.6rem;
+  border: none;
+}
+
+.carousel-statistics {
+  flex: .25;
+  height: 30.2rem;
+}
+
 
 .destinations {
   flex: 1;
 }
 
-.destination-info{
+.destination-info {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex: 1;
 }
 
-.travel-date{
+.travel-date {
   flex: .25;
   height: 17.1rem;
   background-color: #FFF;
@@ -396,30 +463,30 @@ h2 {
   padding: 2rem 2rem;
 }
 
-.travel-date h2{
+.travel-date h2 {
   font-weight: 600;
   font-size: 1.6rem;
   color: #9AA2AC;
 }
 
-.travel-date h1{
+.travel-date h1 {
   font-weight: 700;
   font-size: 3.2rem;
   color: #27292C;
 }
 
-.travel-date div{
+.travel-date div {
   display: flex;
   justify-content: space-between;
 }
 
-.travel-date h3{
+.travel-date h3 {
   font-weight: 600;
   font-size: 1.4rem;
   color: #27292C;
 }
 
-.travel-date span{
+.travel-date span {
   font-size: 1.4rem;
   color: #346AFF;
 }
@@ -428,7 +495,7 @@ h2 {
 
 
 
-.people{
+.people {
   flex: .25;
   height: 17.1rem;
   background-color: #FFF;
@@ -440,56 +507,56 @@ h2 {
   padding: 2rem 2rem;
 }
 
-.people h2{
+.people h2 {
   font-weight: 600;
   font-size: 1.6rem;
   color: #9AA2AC;
 }
 
-.people h1{
+.people h1 {
   font-weight: 700;
   font-size: 3.2rem;
   color: #27292C;
 }
 
-.people h1 span{
+.people h1 span {
   font-weight: 600;
   font-size: 1.6rem;
   color: #27292C;
 }
 
-.people div{
+.people div {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.people h3{
+.people h3 {
   font-weight: 600;
   font-size: 1.4rem;
   color: #27292C;
 }
 
-.people div span{
+.people div span {
   font-size: 3.2em;
   color: #27292C;
   margin-bottom: 0;
 }
 
-.people button{
+.people button {
   background-color: transparent;
   padding: 0;
   display: flex;
   border: none;
 }
 
-.people div span:hover{
+.people div span:hover {
   color: #346AFF;
   cursor: pointer;
 }
 
 
-.travel-destination{
+.travel-destination {
   flex: .4;
   height: 17.1rem;
   background-color: #FFF;
@@ -501,30 +568,30 @@ h2 {
   padding: 2rem 2rem;
 }
 
-.travel-destination h2{
+.travel-destination h2 {
   font-weight: 600;
   font-size: 1.6rem;
   color: #9AA2AC;
 }
 
-.travel-destination h1{
+.travel-destination h1 {
   font-weight: 700;
   font-size: 3.2rem;
   color: #27292C;
 }
 
-.travel-destination div{
+.travel-destination div {
   display: flex;
   justify-content: space-between;
 }
 
-.travel-destination h3{
+.travel-destination h3 {
   font-weight: 600;
   font-size: 1.4rem;
   color: #27292C;
 }
 
-.travel-destination span{
+.travel-destination span {
   font-size: 1.4rem;
   color: #346AFF;
 }
