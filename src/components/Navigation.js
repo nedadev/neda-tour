@@ -9,7 +9,7 @@ const Navigation = (prpos) => {
         <div>
           <header>
             <span className="material-symbols-rounded">flight_takeoff</span>
-            <h1>Ntour</h1>
+            <h1>MyTrip</h1>
           </header>
           <button className="navigation-new-trip-btn">
             <h2>New Trip</h2>

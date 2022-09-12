@@ -6,6 +6,7 @@
   --app-body-spacing: 4.7rem;
 }
 
+p,
 h1,
 h2,
 h3,
@@ -24,8 +25,10 @@ body {
   padding-right: var(--app-body-spacing);
 }
 
-/* header */
 
+
+
+/* header */
 .app-header {
   width: calc(100% - var(--navigation-w));
   margin-left: var(--navigation-w);
@@ -127,6 +130,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /* end of header */
+
 
 
 
@@ -302,7 +306,6 @@ h2 {
   align-items: center;
 }
 
-
 .navigation-forecast-footer {
   width: 100%;
   flex: 1;
@@ -365,8 +368,6 @@ h2 {
 
 
 
-
-
 /* app-main */
 .app-main {
   width: calc(100%- var(--navigation-w));
@@ -381,8 +382,6 @@ h2 {
   justify-content: space-between;
   margin: 4rem 0;
 }
-
-
 
 .carousel-image-slide {
   flex: .72;
@@ -412,7 +411,7 @@ h2 {
   gap: 2.4rem;
 }
 
-.carousel-btn{
+.carousel-btn {
   background-color: transparent;
   border-radius: 50%;
   width: 5.6rem;
@@ -422,12 +421,12 @@ h2 {
   cursor: pointer;
 }
 
-.carousel-btn span{
+.carousel-btn span {
   color: #27292C;
   font-size: 2.8rem;
 }
 
-.carousel-btn:hover{
+.carousel-btn:hover {
   background-color: #fff;
   border-radius: 50%;
   width: 5.6rem;
@@ -449,21 +448,21 @@ h2 {
   color: #9AA2AC;
 }
 
-.carousel-facilities{
+.carousel-facilities {
   display: flex;
   gap: 2rem;
   padding: 2rem 0;
 }
 
-.trip-statistics{
+.trip-statistics {
   position: relative;
   flex: 1;
 }
 
-.trip-statistics-div{
+.trip-statistics-div {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   font-weight: 600;
   font-size: 1.5rem;
   color: #FFF;
@@ -472,20 +471,17 @@ h2 {
   left: 40%;
 }
 
-.trip-statistics-div-1{
+.trip-statistics-div-1 {
   transform: translate(-80%, 30%);
-
 }
 
-.trip-statistics-div-2{
+.trip-statistics-div-2 {
   transform: translate(-140%, 110%);
 }
 
-.trip-statistics-div-3{
+.trip-statistics-div-3 {
   transform: translate(-20%, 180%);
 }
-
-
 
 .destinations {
   flex: 1;
@@ -536,10 +532,6 @@ h2 {
   font-size: 1.4rem;
   color: #346AFF;
 }
-
-
-
-
 
 .people {
   flex: .25;
@@ -601,7 +593,6 @@ h2 {
   cursor: pointer;
 }
 
-
 .travel-destination {
   flex: .4;
   height: 17.1rem;
@@ -642,8 +633,6 @@ h2 {
   color: #346AFF;
 }
 
-
-
 .todo-list-item-wrapper {
   flex: 1;
   padding-left: var(--app-body-spacing);
@@ -674,7 +663,6 @@ h2 {
   transition: all .3s;
 }
 
-
 .todo-list-item:hover .todo-list-item-avatar {
   transform: scale(1.3);
   opacity: .8;
@@ -690,7 +678,6 @@ h2 {
   font-weight: 400;
   font-size: 1.4rem;
   color: #27292C;
-
 }
 
 .todo-list-item span {
@@ -698,8 +685,6 @@ h2 {
   font-size: 2rem;
   color: #27292C;
 }
-
-
 
 .todo-list-item-img {
   width: auto;
@@ -720,20 +705,20 @@ h2 {
   margin-top: 2.5rem;
 }
 
-.timeline-heading-wrapper{
+.timeline-heading-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4rem;
 }
 
-.timeline-heading-wrapper h1{
+.timeline-heading-wrapper h1 {
   font-weight: 700;
   font-size: 3.2rem;
   color: #27292C;
 }
 
-.timeline-heading-wrapper button{
+.timeline-heading-wrapper button {
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -747,65 +732,69 @@ h2 {
   border: none;
 }
 
-.timeline-heading-wrapper button span{
+.timeline-heading-wrapper button span {
   color: #FFF;
   font-weight: 600;
   font-size: 2.6rem;
 }
 
-
-.react-calendar{
+.react-calendar {
   text-align: center;
   background-color: transparent;
   border: none;
   font-family: 'Sora', sans-serif;
 }
-.react-calendar__navigation{
+
+.react-calendar__navigation {
   background-color: transparent;
   margin-bottom: 3.2rem;
 }
-.react-calendar__navigation__arrow{
+
+.react-calendar__navigation__arrow {
   background-color: transparent;
   border: none;
   font-weight: 700;
   font-size: 2rem;
   color: #27292C;
 }
-.react-calendar__navigation__label{
+
+.react-calendar__navigation__label {
   background-color: transparent;
   border: none;
   font-weight: 700;
   font-size: 2rem;
   color: #27292C;
 }
-.react-calendar__month-view{
+
+.react-calendar__month-view {
   font-size: 1.4rem;
   font-weight: 400;
   color: #27292C;
 }
-.react-calendar__month-view__weekdays{
+
+.react-calendar__month-view__weekdays {
   font-size: 1.4rem;
   font-weight: 400;
   color: #9AA2AC;
   margin-bottom: 3.2rem;
 }
-.react-calendar__tile{
+
+.react-calendar__tile {
   margin-bottom: 3.2rem;
   cursor: pointer;
   transition: .4s;
 }
 
-.react-calendar__tile:hover{
+.react-calendar__tile:hover {
   background-color: #FFF;
 }
 
-.timeline-schedule{
+.timeline-schedule {
   width: 100%;
   border-radius: 1.6rem;
   box-sizing: border-box;
   margin-top: 4rem;
 }
-
 
 .timeline-event {
   display: flex;
@@ -823,20 +812,69 @@ h2 {
   font-size: 1.4rem;
 }
 
-.timeline-event h1:last-of-type{ 
+.timeline-event h1:last-of-type {
   color: #FFF;
   font-weight: 600;
   font-size: 1.4rem;
- }
+}
+
 /* end of app-main */
 
-/* end of footer */
 
+
+
+/* end of footer */
 .footer {
-  width: calc(100% - var(--navigation-w));
   margin-left: var(--navigation-w);
-  background-color: yellow;
-  display: none;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.footer-brand h1 {
+  color: #27292C;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.footer hr {
+  margin: 2rem 0;
+}
+
+.footer-icon-and-copyright-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding-right: 4rem;
+  color: #27292C;
+  font-size: 1.4rem;
+}
+
+.footer-icon-wrapper {
+  font-size: 2.8rem;
+  color: #27292C;
+  display: flex;
+  justify-content: center;
+  gap: .4rem;
+}
+
+.footer-icon {
+  border: .1rem #27292C solid;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-icon span {
+  font-size: 1.7rem;
+  color: #27292C;
 }
 
 /* end of footer */
