@@ -457,6 +457,7 @@ h2 {
 .trip-statistics {
   position: relative;
   flex: 1;
+  align-self: center;
 }
 
 .trip-statistics-div {
@@ -878,3 +879,22 @@ h2 {
 }
 
 /* end of footer */
+
+
+/* responsivity */
+
+@media(max-width: 1900px) {
+  .travel-destination-flight-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .travel-destination-flight-info-country {
+    width: fit-content;
+  }
+
+  .travel-destination-flight-info-flight {
+    width: fit-content;
+  }
+}
