@@ -27,6 +27,11 @@ const TimeLine = (props) => {
         />
         <Event timeFrom="13:00" timeTo="13:30" description="Airport to Hotel" />
         <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
+        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
+        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
+        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
+        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
+        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
       </section>
     </aside>
   );

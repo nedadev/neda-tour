@@ -19,6 +19,62 @@ const fakeData = [
     rate: 3,
   },
   {
+    name: "Pantheon",
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNq6CDa-SYbgCt6loiuef6JimdSAi-sdCuQ-FVJ=w408-h293-k-no",
+    location:
+      "https://www.google.com/maps/place/Pantheon/@41.8986147,12.4726457,17z/data=!3m1!4b1!4m5!3m4!1s0x132f604f678640a9:0xcad165fa2036ce2c!8m2!3d41.8986108!4d12.4768729",
+    rate: 3,
+  },
+  {
+    name: "Pantheon",
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNq6CDa-SYbgCt6loiuef6JimdSAi-sdCuQ-FVJ=w408-h293-k-no",
+    location:
+      "https://www.google.com/maps/place/Pantheon/@41.8986147,12.4726457,17z/data=!3m1!4b1!4m5!3m4!1s0x132f604f678640a9:0xcad165fa2036ce2c!8m2!3d41.8986108!4d12.4768729",
+    rate: 3,
+  },
+  {
+    name: "Pantheon",
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNq6CDa-SYbgCt6loiuef6JimdSAi-sdCuQ-FVJ=w408-h293-k-no",
+    location:
+      "https://www.google.com/maps/place/Pantheon/@41.8986147,12.4726457,17z/data=!3m1!4b1!4m5!3m4!1s0x132f604f678640a9:0xcad165fa2036ce2c!8m2!3d41.8986108!4d12.4768729",
+    rate: 3,
+  },
+  {
+    name: "Pantheon",
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNq6CDa-SYbgCt6loiuef6JimdSAi-sdCuQ-FVJ=w408-h293-k-no",
+    location:
+      "https://www.google.com/maps/place/Pantheon/@41.8986147,12.4726457,17z/data=!3m1!4b1!4m5!3m4!1s0x132f604f678640a9:0xcad165fa2036ce2c!8m2!3d41.8986108!4d12.4768729",
+    rate: 3,
+  },
+  {
+    name: "Pantheon",
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNq6CDa-SYbgCt6loiuef6JimdSAi-sdCuQ-FVJ=w408-h293-k-no",
+    location:
+      "https://www.google.com/maps/place/Pantheon/@41.8986147,12.4726457,17z/data=!3m1!4b1!4m5!3m4!1s0x132f604f678640a9:0xcad165fa2036ce2c!8m2!3d41.8986108!4d12.4768729",
+    rate: 3,
+  },
+  {
+    name: "Pantheon",
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNq6CDa-SYbgCt6loiuef6JimdSAi-sdCuQ-FVJ=w408-h293-k-no",
+    location:
+      "https://www.google.com/maps/place/Pantheon/@41.8986147,12.4726457,17z/data=!3m1!4b1!4m5!3m4!1s0x132f604f678640a9:0xcad165fa2036ce2c!8m2!3d41.8986108!4d12.4768729",
+    rate: 3,
+  },
+  {
+    name: "Pantheon",
+    image:
+      "https://lh5.googleusercontent.com/p/AF1QipNq6CDa-SYbgCt6loiuef6JimdSAi-sdCuQ-FVJ=w408-h293-k-no",
+    location:
+      "https://www.google.com/maps/place/Pantheon/@41.8986147,12.4726457,17z/data=!3m1!4b1!4m5!3m4!1s0x132f604f678640a9:0xcad165fa2036ce2c!8m2!3d41.8986108!4d12.4768729",
+    rate: 3,
+  },
+  {
     name: "The Colosseum",
     image:
       "https://images.pexels.com/photos/397431/pexels-photo-397431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
