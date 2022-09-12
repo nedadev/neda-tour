@@ -992,4 +992,38 @@ h2 {
     display: none;
   }
 }
+@media(max-width: 900px){
+  .app-main{ 
+    flex-direction: column;
+  }
+
+  .timeline{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 7rem;
+  }
+
+  .carousel-image-slide h1{
+    font-size: 5rem;
+  }
+
+  .app-header{
+    flex-direction: column-reverse;
+    gap: 3rem;
+    height: auto;
+    padding-top: 2rem;
+  }
+
+  .app-header-profile{
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  .app-header-filter{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+}
 
