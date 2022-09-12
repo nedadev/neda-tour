@@ -898,3 +898,27 @@ h2 {
     width: fit-content;
   }
 }
+
+@media(max-width: 1500px) {
+  .carousel{
+    display: block;
+  }
+
+  .carousel-statistics{
+    margin-top: 3rem;
+  }
+
+  .destination-info{
+    display: block;
+  }
+
+  .people{
+    margin: 2rem 0;
+  }
+
+  .travel-destination-flight-info {
+    display: flex;
+    flex-direction: row;
+  } 
+}
+
