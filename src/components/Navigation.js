@@ -3,8 +3,13 @@ import ForecastItem from "./ForecastItem";
 
 
 const Navigation = (prpos) => {
+
+  const onMenuClosed=()=>{
+    document.getElementById("navigation").style.display = "none";
+  }
+
   return (
-    <nav className="navigation">
+    <nav className="navigation" id="navigation">
       <div className="navigation-wrapper">
         <div>
           <header>
@@ -43,7 +48,12 @@ const Navigation = (prpos) => {
         {/* forecast */}
         <article>
           <div className="navigation-forecast-header">
-            <span className="material-symbols-rounded" id="navigation-forecast-icon">sunny</span>
+            <span
+              className="material-symbols-rounded"
+              id="navigation-forecast-icon"
+            >
+              sunny
+            </span>
             <div className="navigation-forecast-location">
               <h1>30°</h1>
               <div className="navigation-forecast-location-wrapper">
@@ -54,11 +64,21 @@ const Navigation = (prpos) => {
           </div>
           <div className="navigation-forecast-footer">
             <ul>
-              <li><ForecastItem/></li>
-              <li><ForecastItem/></li>
-              <li><ForecastItem/></li>
-              <li><ForecastItem/></li>
-              <li><ForecastItem/></li>
+              <li>
+                <ForecastItem />
+              </li>
+              <li>
+                <ForecastItem />
+              </li>
+              <li>
+                <ForecastItem />
+              </li>
+              <li>
+                <ForecastItem />
+              </li>
+              <li>
+                <ForecastItem />
+              </li>
             </ul>
           </div>
         </article>
@@ -69,6 +89,9 @@ const Navigation = (prpos) => {
           <h2>Support</h2>
         </footer>
       </div>
+      <button id="navigation-close" onClick={()=>onMenuClosed()}>
+        <span class="material-symbols-rounded">keyboard_double_arrow_left</span>
+      </button>
     </nav>
   );
 };

@@ -6,14 +6,21 @@ import Main from "./components/Main";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
-
 function App() {
-  return(
+  const onMenuClicked=()=>{
+    document.getElementById("navigation").style.display = "flex";
+    document.getElementById("navigation-close").style.display = "flex";
+  }
+
+  return (
     <div className="app-body">
-      <Header/>
-      <Navigation/>
-      <Main/>
-      <Footer/>
+      <Header />
+      <button className="navigation-open" onClick={()=>onMenuClicked()}>
+        <span className="material-symbols-rounded">double_arrow</span>
+      </button>
+      <Navigation />
+      <Main />
+      <Footer />
     </div>
   );
 }
