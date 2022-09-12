@@ -24,8 +24,8 @@ const TravelDestination = (props) => {
     <article className="travel-destination">
       <h2>Destination</h2>
       <h1>Rome</h1>
-      <div>
-        <div>
+      <div className="travel-destination-flight-info">
+        <div className="travel-destination-flight-info-country">
           <GetCountry name={"Netherlands"} code={"NL"} />
           <span
             className="material-symbols-rounded"
@@ -35,7 +35,7 @@ const TravelDestination = (props) => {
           </span>
           <GetCountry name={"Italy"} code={"IT"} />
         </div>
-        <div>
+        <div  className="travel-destination-flight-info-flight">
           <span
             className="material-symbols-rounded"
             style={{ marginRight: "1rem" }}
