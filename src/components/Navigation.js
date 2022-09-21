@@ -90,7 +90,7 @@ const Navigation = (prpos) => {
         </footer>
       </div>
       <button id="navigation-close" onClick={()=>onMenuClosed()}>
-        <span class="material-symbols-rounded">keyboard_double_arrow_left</span>
+        <span className="material-symbols-rounded">keyboard_double_arrow_left</span>
       </button>
     </nav>
   );
