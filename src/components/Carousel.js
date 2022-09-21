@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import TripStatistics from "./TripStatistics";
+import {get} from "../lib/api";
 
 const Facilities = (props) => {
   const { circleColor, name } = props;
@@ -16,37 +18,37 @@ const Facilities = (props) => {
     </div>
   );
 };
-// const fakeData = [
-//   {
-//     city: "Rome",
-//     image:
-//       "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-//     statistics: {
-//       transport: 60,
-//       hotel: 30,
-//       other: 10,
-//     },
-//   },
-// ];
 
 const Carousel = (props) => {
-  const bgImg =
-    "https://images.pexels.com/photos/397431/pexels-photo-397431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
-  return (
-    <section className="carousel">
+  const [cities, setCities] = useState([]);
+
+  useEffect(() => {
+    // retriving list of trip cities
+    get("/cities").then((response)=>{
+      const {status, data} = response;
+      console.log({status, data});
+      if(status === 200){
+        setCities(data);
+      }
+    })
+  }, []);
+
+ if(cities.length > 0) return (
+       <section className="carousel">
       {/* image */}
+   
       <div
         className="carousel-image-slide"
         style={{
-          backgroundImage: `url(${bgImg})`,
+          backgroundImage: `url(${cities[0].image})`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
         <h2>Nearest trip</h2>
-        <h1>Rome</h1>
+        <h1>{cities[0].city}</h1>
         <div className="carousel-btn-wrapper">
           <button className="carousel-btn">
             <span className="material-symbols-rounded">west</span>
@@ -60,7 +62,7 @@ const Carousel = (props) => {
       {/* statistics */}
       <div className="carousel-statistics">
         <h2>Expenses</h2>
-        <TripStatistics num1={60} num2={30} num3={10}/>
+        <TripStatistics num1={cities[0].statistics.transport} num2={cities[0].statistics.hotel} num3={cities[0].statistics.other}/>
         <div className="carousel-facilities">
           <Facilities circleColor={"#02AF72"} name={"Transport"} />
           <Facilities circleColor={"#6C50FC"} name={"Hotel"} />
