@@ -25,7 +25,9 @@ body {
   padding-right: var(--app-body-spacing);
 }
 
-
+.react-router-dom-link{
+  text-decoration: none;
+}
 
 
 /* header */
@@ -1027,3 +1029,19 @@ h2 {
   }
 }
 
+/* Work in progress */
+.wip-main{
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.wip-main p{
+  font-size: 2rem;
+  letter-spacing: .6rem;
+  line-height: 4rem;
+  color: #9AA2AC;
+  margin-top: 2rem;
+}
+/* end of Work in progress */

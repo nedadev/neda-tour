@@ -1,3 +1,4 @@
+import { BrowserRouter as Router} from "react-router-dom";
 // styles
 import "./styles/App.css";
 // components
@@ -7,21 +8,23 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
 function App() {
-  const onMenuClicked=()=>{
+  const onMenuClicked = () => {
     document.getElementById("navigation").style.display = "flex";
     document.getElementById("navigation-close").style.display = "flex";
-  }
+  };
 
   return (
-    <div className="app-body">
-      <Header />
-      <button className="navigation-open" onClick={()=>onMenuClicked()}>
-        <span className="material-symbols-rounded">double_arrow</span>
-      </button>
-      <Navigation />
-      <Main />
-      <Footer />
-    </div>
+    <Router>
+      <div className="app-body">
+        <Header />
+        <button className="navigation-open" onClick={() => onMenuClicked()}>
+          <span className="material-symbols-rounded">double_arrow</span>
+        </button>
+        <Navigation />
+        <Main />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

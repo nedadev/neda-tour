@@ -1,12 +1,11 @@
+import { Link } from "react-router-dom";
 import NavigationItem from "./NavigationItem";
 import ForecastItem from "./ForecastItem";
 
-
 const Navigation = (prpos) => {
-
-  const onMenuClosed=()=>{
+  const onMenuClosed = () => {
     document.getElementById("navigation").style.display = "none";
-  }
+  };
 
   return (
     <nav className="navigation" id="navigation">
@@ -25,23 +24,33 @@ const Navigation = (prpos) => {
         {/* menu */}
         <ul>
           <li>
-            <NavigationItem icon="home" label="Home" />
+            <Link className="react-router-dom-link" to="/">
+              <NavigationItem icon="home" label="Home" />
+            </Link>
           </li>
 
           <li>
-            <NavigationItem icon="calendar_month" label="All trips" />
+            <Link className="react-router-dom-link" to="/trips">
+              <NavigationItem icon="calendar_month" label="All trips" />
+            </Link>
           </li>
 
           <li>
-            <NavigationItem icon="flight" label="Travels" />
+            <Link className="react-router-dom-link" to="/travels">
+              <NavigationItem icon="flight" label="Travels" />
+            </Link>
           </li>
 
           <li>
-            <NavigationItem icon="bed" label="Rooms" />
+            <Link className="react-router-dom-link" to="/rooms">
+              <NavigationItem icon="bed" label="Rooms" />
+            </Link>
           </li>
 
           <li>
-            <NavigationItem icon="attractions" label="Attractions" />
+            <Link className="react-router-dom-link" to="/attractions">
+              <NavigationItem icon="attractions" label="Attractions" />
+            </Link>
           </li>
         </ul>
 
@@ -89,8 +98,10 @@ const Navigation = (prpos) => {
           <h2>Support</h2>
         </footer>
       </div>
-      <button id="navigation-close" onClick={()=>onMenuClosed()}>
-        <span className="material-symbols-rounded">keyboard_double_arrow_left</span>
+      <button id="navigation-close" onClick={() => onMenuClosed()}>
+        <span className="material-symbols-rounded">
+          keyboard_double_arrow_left
+        </span>
       </button>
     </nav>
   );
