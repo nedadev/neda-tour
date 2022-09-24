@@ -27,7 +27,7 @@ const Carousel = (props) => {
     // retriving list of trip cities
     get("/cities").then((response)=>{
       const {status, data} = response;
-      console.log({status, data});
+      // console.log({status, data});
       if(status === 200){
         setCities(data);
       }
