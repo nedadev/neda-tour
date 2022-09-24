@@ -1,9 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import Event from "./Event";
+import {get} from "../lib/api";
 
 const TimeLine = (props) => {
   const [value, onChange] = useState(new Date());
+
+  const [events, setEvents] = useState([]);
+
+  const getEvents = () => {
+    get(`/events`).then((response) => {
+      const { status, data } = response;
+      // console.log({ status, data });
+      if (status === 200) {
+        setEvents(data)
+      }
+    });
+  };
+
+  useEffect(()=>{
+    getEvents();
+  },[])
+
+  const dataEventsList = () => {
+    return events.map((data, index) => {
+      const { from, to, event } = data;
+      return (
+        <div key={`event-item-${index}`}>
+          <Event
+            timeFrom={from}
+            timeTo={to}
+            description={event}
+          />
+        </div>
+      );
+    });
+  };
+
   return (
     <aside className="timeline">
       <div className="timeline-heading-wrapper">
@@ -19,19 +52,7 @@ const TimeLine = (props) => {
         value={value}
       />
       <section className="timeline-schedule">
-        <Event timeFrom="08:15" timeTo="08:30" description="Taxi to airport" />
-        <Event
-          timeFrom="10:45"
-          timeTo="12:00"
-          description="Amsterdam to Rome"
-        />
-        <Event timeFrom="13:00" timeTo="13:30" description="Airport to Hotel" />
-        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
-        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
-        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
-        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
-        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
-        <Event timeFrom="14:00" timeTo="14:30" description="Check-in" />
+        {dataEventsList()}
       </section>
     </aside>
   );

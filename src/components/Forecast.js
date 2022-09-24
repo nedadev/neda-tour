@@ -43,7 +43,7 @@ const Forecast = (props) => {
       return forecast.map((data, index) => {
         const { degree, status } = data;
         return (
-          <li>
+          <li key={`forecast-item-${index}`}>
             <ForecastItem day={index} degree={degree} status={status} />
           </li>
         );
