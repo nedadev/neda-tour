@@ -20,20 +20,21 @@ const GetCountry = (props) => {
 };
 
 const TravelDestination = (props) => {
+  const { city, from, to, est} = props.data;
   return (
     <article className="travel-destination">
       <h2>Destination</h2>
-      <h1>Rome</h1>
+      <h1>{city}</h1>
       <div className="travel-destination-flight-info">
         <div className="travel-destination-flight-info-country">
-          <GetCountry name={"Netherlands"} code={"NL"} />
+          <GetCountry name={from.country} code={from.flag} />
           <span
             className="material-symbols-rounded"
             style={{ margin: "0 1rem" }}
           >
             sync_alt
           </span>
-          <GetCountry name={"Italy"} code={"IT"} />
+          <GetCountry name={to.country} code={to.flag} />
         </div>
         <div  className="travel-destination-flight-info-flight">
           <span
@@ -42,7 +43,7 @@ const TravelDestination = (props) => {
           >
             flight
           </span>
-          <h3>2 h 25 min flight</h3>
+          <h3>{est} flight</h3>
         </div>
       </div>
     </article>
