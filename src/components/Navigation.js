@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
+import Forecast from "./Forecast";
 import NavigationItem from "./NavigationItem";
-import ForecastItem from "./ForecastItem";
 
 const Navigation = (prpos) => {
   const onMenuClosed = () => {
@@ -55,43 +55,8 @@ const Navigation = (prpos) => {
         </ul>
 
         {/* forecast */}
-        <article>
-          <div className="navigation-forecast-header">
-            <span
-              className="material-symbols-rounded"
-              id="navigation-forecast-icon"
-            >
-              sunny
-            </span>
-            <div className="navigation-forecast-location">
-              <h1>30°</h1>
-              <div className="navigation-forecast-location-wrapper">
-                <span className="material-symbols-rounded">near_me</span>
-                <h3>Rome</h3>
-              </div>
-            </div>
-          </div>
-          <div className="navigation-forecast-footer">
-            <ul>
-              <li>
-                <ForecastItem />
-              </li>
-              <li>
-                <ForecastItem />
-              </li>
-              <li>
-                <ForecastItem />
-              </li>
-              <li>
-                <ForecastItem />
-              </li>
-              <li>
-                <ForecastItem />
-              </li>
-            </ul>
-          </div>
-        </article>
-
+        <Forecast />
+        
         {/* support */}
         <footer className="navigation-footer">
           <span className="material-symbols-rounded">contact_support</span>

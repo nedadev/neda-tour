@@ -339,6 +339,7 @@ h2 {
 
 .navigation-forecast-location-wrapper h3 {
   font-size: 1.4rem;
+  text-transform: capitalize;
 }
 
 #navigation-forecast-icon {
